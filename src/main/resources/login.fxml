@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="435.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easychat.fx.controller.Login">
+   <children>
+      <TextField fx:id="userName" layoutX="307.0" layoutY="112.0" />
+      <Label fx:id="userNameLabel" layoutX="217.0" layoutY="117.0" text="userNmae" />
+      <TextField fx:id="password" layoutX="307.0" layoutY="165.0" />
+      <Label fx:id="passwordLabel" layoutX="219.0" layoutY="170.0" text="password" />
+      <Button layoutX="307.0" layoutY="245.0" mnemonicParsing="false" onAction="#login" text="login" />
+      <Button layoutX="415.0" layoutY="245.0" mnemonicParsing="false" text="register" onAction="#register"/>
+      <Label fx:id="errorMsg" layoutX="142.0" layoutY="316.0" prefHeight="17.0" prefWidth="458.0" />
+   </children>
+</AnchorPane>

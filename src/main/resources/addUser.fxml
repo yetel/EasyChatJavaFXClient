@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="213.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easychat.fx.controller.AddUser">
+   <children>
+      <Label layoutX="153.0" layoutY="32.0" text="input user id" />
+      <TextField fx:id="textField" layoutX="108.0" layoutY="90.0" />
+      <Button layoutX="108.0" layoutY="143.0" mnemonicParsing="false" onAction="#add" prefHeight="27.0" prefWidth="65.0" text="add" />
+      <Button layoutX="216.0" layoutY="143.0" mnemonicParsing="false" onAction="#cancel" text="cancel" />
+      <Label fx:id="errorMsg" layoutX="2.0" layoutY="182.0" prefHeight="17.0" prefWidth="392.0" />
+   </children>
+</AnchorPane>

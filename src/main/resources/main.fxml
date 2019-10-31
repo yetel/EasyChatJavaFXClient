@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="610.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.easychat.fx.controller.Main">
+   <children>
+      <ListView fx:id="userListView" layoutX="4.0" layoutY="66.0" onMouseClicked="#listViewClicked" prefHeight="544.0" prefWidth="178.0" />
+      <ListView fx:id="textArea" layoutX="194.0" layoutY="488.0" prefHeight="113.0" prefWidth="630.0"/>
+      <Button fx:id="sendMessage" layoutX="832.0" layoutY="516.0" mnemonicParsing="false" onAction="#sendMessage" onKeyReleased="#enter" prefHeight="58.0" prefWidth="76.0" text="发送" />
+      <ListView fx:id="messageListView" layoutX="194.0" layoutY="31.0" onMouseClicked="#messagViewClicked" prefHeight="428.0" prefWidth="713.0" />
+      <Label fx:id="label" layoutX="491.0" layoutY="4.0" prefHeight="27.0" prefWidth="197.0" text="与某某聊天" />
+      <Button fx:id="userList" alignment="BOTTOM_LEFT" layoutX="65.0" layoutY="39.0" mnemonicParsing="false" onAction="#showUserList" prefHeight="27.0" prefWidth="57.0" text="好友" />
+      <Button fx:id="groupList" alignment="BOTTOM_LEFT" layoutX="129.0" layoutY="39.0" mnemonicParsing="false" onAction="#showGroupList" prefHeight="27.0" prefWidth="57.0" text="群" />
+      <Button fx:id="addUser" layoutX="157.0" layoutY="4.0" mnemonicParsing="false" onAction="#addUser" text="+" />
+      <Button fx:id="createGroup" layoutX="-1.0" layoutY="3.0" mnemonicParsing="false" onAction="#createGroup" prefHeight="23.0" prefWidth="57.0" text="创建群" />
+      <Button fx:id="inviteGroup" layoutX="65.0" layoutY="3.0" mnemonicParsing="false" onAction="#inviteGroup" text="邀请入群" />
+      <Label fx:id="errorMsg" layoutX="220.0" layoutY="464.0" prefHeight="17.0" prefWidth="585.0" />
+      <Button fx:id="message" alignment="BOTTOM_LEFT" layoutX="-5.0" layoutY="39.0" mnemonicParsing="false" onAction="#showMessage" prefHeight="27.0" prefWidth="64.0" text="消息" />
+      <Button layoutX="863.0" layoutY="459.0" mnemonicParsing="false" onAction="#clear" prefHeight="27.0" prefWidth="45.0" text="清屏" />
+      <Label fx:id="remind" layoutX="832.0" layoutY="489.0" prefHeight="27.0" prefWidth="76.0" text="enter换行" />
+      <Label fx:id="remind2" layoutX="832.0" layoutY="573.0" prefHeight="15.0" prefWidth="76.0" text="ctrl+enter" />
+      <Label fx:id="messageNum" layoutX="44.0" layoutY="41.0" prefHeight="23.0" prefWidth="2.0" text="" />
+      <Button layoutX="789.0" layoutY="459.0" mnemonicParsing="false" onAction="#messageList" prefHeight="27.0" prefWidth="70.0" text="消息记录" />
+   </children>
+</AnchorPane>
