@@ -9,5 +9,6 @@
 4. 具体流程参考后端提供的接口文档，有较为详细的说明
 
 ## EasyChat相关开源项目
+
 #### 服务端：[EasyChatServer](https://github.com/yetel/EasyChatServer)
 #### Android客户端：[EasyChatAndroidClient](https://github.com/yetel/EasyChatAndroidClient)
